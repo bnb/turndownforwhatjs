@@ -42,17 +42,17 @@
 		parent.style.zIndex = 5000;
 		parent.style.right = 0;
 		parent.style.top = 0
-		parent.style.opacity = 0.2
+		parent.style.opacity = 0
 		var div = document.createElement('div')
 		div.id = "tdfw"
 		parent.appendChild(div)
 		document.body.appendChild(parent)
 		parent.onmouseover = function() {
 			console.log('mouse')
-			parent.style.opacity = 1
+			parent.style.opacity = 0
 		}
 		parent.onmouseout = function() {
-			parent.style.opacity = 0.2
+			parent.style.opacity = 0
 		}
 		parent.style.webkitTransition = 'opacity 0.3s ease-in-out'
 		parent.style.transition = 'opacity 0.3s ease-in-out'
